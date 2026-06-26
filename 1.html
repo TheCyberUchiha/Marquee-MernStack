@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo</title>
+    <style>
+    
+    /* Modern CSS Boilerplate */
+* , *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-image: url('https://i.pinimg.com/564x/c4/80/86/c48086544243bb0b49b5ee98740378dc.jpg');
+  object-fit: cover;
+  object-position: center;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p{
+    color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Utility Container */
+.container {
+  width: min(90%, 1200px);
+  margin-inline: auto;
+}
+
+.hero{
+    display: flex;
+    overflow: hidden;
+}
+
+img{
+    object-fit: cover;
+    object-position: center;
+    border-top-right-radius: 100%;
+    transform: scale(130%);
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+
+.heading{
+    padding: 48px;
+    max-width: 40%;
+}
+.media{
+    font-size: 60px;
+    display: flex;
+    justify-content: end;
+    color: white;
+}
+.motion{
+    font-size: 60px;
+    color: white;
+}
+.group  {
+    font-size: 60px;
+    color: white;
+}
+
+.dt{
+    color: red;
+    display: flex;
+    justify-content: end;
+}
+
+
+.boxes{
+    display: flex;
+    gap: 20px;
+    display: flex;
+    justify-content: end;
+    padding-right: 100px;
+}
+
+
+.box{
+    height: 100vh;
+    width: 20%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+.box2{
+    color: white;
+    height: 100vh;
+    width: 20%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+.box .text{
+    font-size: 20px;
+    padding-left: -20%;
+    margin-bottom: 10%;
+}
+.box2 .text{
+    font-size: 20px;
+    padding-left: -20%;
+    margin-bottom: 10%;
+}
+
+.number2{
+    font-size: 300px;
+    padding-right: 120px;
+}
+.number{
+    font-size: 300px;
+    padding-right: 120px;
+}
+</style>
+</head>
+<body>
+    <section class="hero">
+        <div class="heading">
+            <div class="motion">MOTION</div>
+            <div class="media">MEDIA</div>
+            <div class="group">GROUP</div>
+            <div class="dt">DESIGN<br>TEMPLATE</div>
+            <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGa70BgePn1Rsf41oiG6ac0_TAzpKXj4d9qg&s" height="208" width="300"></div>
+        </div>
+        <div class="boxes">
+            <div class="box">
+            <div class="text"><p>CHANGE<br>TEXT</p></div>
+            <div class="number"><p>01</p></div>
+        </div>
+        <div class="box2">
+            <div class="number2">02</div>
+            <div class="text"><p>CHANGE<br>TEXT</p></div>
+        </div>
+        <div class="box">
+            <div class="text"><p>ADD YOUR<br>CONTENT</p></div>
+            <div class="number"><p>03</p></div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>

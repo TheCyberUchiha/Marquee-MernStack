@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Login</title>
+    <link rel="stylesheet" href="h2_style.css">
+</head>
+<body>
+    <div class="modal-overlay">
+      <div class="login-card">
+        <div class="close-btn">&times;</div>
+        
+        <div class="logo">
+          <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="Pinterest Logo">
+        </div>
+
+        <h1>Welcome to Pinterest</h1>
+        <p class="subtitle">Find new ideas to try</p>
+
+        <form onsubmit="return false;">
+          <div class="input-group">
+            <label>Email address</label>
+            <input type="email" placeholder="Email address">
+          </div>
+
+          <div class="input-group">
+            <label>Password</label>
+            <div class="password-wrapper">
+              <input type="password" placeholder="Create a password">
+              <span class="toggle-password">👁️</span>
+            </div>
+            <p class="hint">Use 8 or more letters, numbers and symbols</p>
+          </div>
+
+          <div class="input-group">
+            <label>Date of birth ⓘ</label>
+            <input type="text" placeholder="dd-mm-yyyy">
+          </div>
+
+          <button type="submit" class="btn-primary">Continue</button>
+        </form>
+
+        <div class="divider">OR</div>
+
+        <div class="google-login">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google">
+          <span>Continue as Darshak</span>
+        </div>
+
+        <p class="terms">
+          By continuing, you agree to Pinterest's <a href="#">Terms of Service</a> and acknowledge that you've read our <a href="#">Privacy Policy</a>.
+        </p>
+
+        <div class="footer">
+          Already a member? <a href="#">Log in</a>
+        </div>
+
+        <div class="business-footer">
+          Create a free business account
+        </div>
+      </div>
+    </div>
+</body>
+</html>

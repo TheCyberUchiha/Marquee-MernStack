@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    #nav {
+      background: aqua;
+      border: 2px solid black;
+      border-radius: 50px;
+      margin-top: 100px;
+      padding: 12px 20px;
+    }
+
+    #nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }  
+
+    #nav ul li a {
+      text-decoration: none;
+      font-size: 24px;
+      color: purple;
+    }
+
+    .search {
+      margin-left: auto;
+    }
+
+    .search input {
+      padding: 6px 12px;
+      width: 220px;
+    }
+  </style>
+</head>
+<body>
+
+<nav id="nav">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+
+    <li>
+      <label for="cars">Choose A Car:</label>
+      <select id="cars">
+        <option>Volvo</option>
+        <option>Saab</option>
+        <option>Mercedes</option>
+        <option>Audi</option>
+      </select>
+    </li>
+
+    <li class="search">
+      <input type="search" placeholder="Search...">
+    </li>
+  </ul>
+</nav>
+
+</body>
+</html>
