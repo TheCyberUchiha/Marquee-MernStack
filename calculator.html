@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{
+            display: grid;
+            width: 500px;
+            grid-template-columns: repeat(4,1fr);
+            
+        }
+        .outbox{
+            padding: 30px;
+            background-color: plum;
+            width: 500px;
+
+        }
+        .container > div{
+            
+             min-height: 100px;
+             align-content: center;  
+            
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color: black;
+            color: white;
+            font-size: 100px;  
+            text-align: right;
+            padding-right: 20px;
+        }
+        .item2,.item3,.item4,.item5{
+            background-color: grey;
+            color: black;
+             font-size: 35px;
+        }
+        .item6,.item7,.item8,.item10,.item11,.item12,.item13,.item14,.item15,.item16,.item17,.item18{
+            background-color: lightgrey;
+            color: black;
+            font-size: 35px;
+        }
+        .item9{
+            grid-row-start:3 ;
+            grid-row-end: 8;
+            grid-column-start: 4;
+            background-color: orange;
+            color: white;
+            font-size: 35px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body><center>
+    <div class="outbox">
+    <div class="container">
+        <div class="item1">0</div>
+        <div class="item2">+</div>
+        <div class="item3">-</div>
+        <div class="item4">x</div>
+        <div class="item5">/</div>
+        <div class="item6">7</div>
+        <div class="item7">8</div>
+        <div class="item8">9</div>
+        <div class="item9">=</div>
+        <div class="item10">4</div>
+        <div class="item11">5</div>
+        <div class="item12">6</div>
+        <div class="item13">1</div>
+        <div class="item14">2</div>
+        <div class="item15">3</div>
+        <div class="item16">0</div>
+        <div class="item17">.</div>
+        <div class="item18">AC</div>
+    </div>
+</div>
+    </center>
+</body>
+</html>
