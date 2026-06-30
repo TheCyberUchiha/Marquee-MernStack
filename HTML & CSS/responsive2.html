@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media Query</title>
+
+<style>
+div{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 400px) {
+    div{
+        background-image: url('https://imgproxy.amodays.com/zgsdjkX_I1XvyUOaf0LkakhGJzLTW_PdQkqGQVfh4yk/rs:fill:1200:0:1/g:no/aHR0cHM6Ly9jZG4uYW1vbWFtYS5jb20vMWI5NWE0NTA3NTgxOGZkZDA5ZjI1YjcxNTQzNTkwNTM3NmUyZWQ3ZDg0MmM1YzUzNDVjN2YyNWYxODFjMThjYy5qcGc.jpg');
+    }
+}
+
+@media (max-width: 399px) {
+    div{
+        background-image: url('https://i.pinimg.com/236x/0d/64/34/0d64346557768c980b3ccc48f04b3a6a.jpg');
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>
