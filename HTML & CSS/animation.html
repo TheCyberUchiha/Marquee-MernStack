@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #blue {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        animation-duration: 5s;
+        animation-name: box;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: step();
+    }
+    #red{
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        animation-duration: 5s;
+        animation-name: box;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+    #green{
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        animation-duration: 5s;
+        animation-name: box;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease;
+    }
+    #gold{
+        height: 100px;
+        width: 100px;
+        background-color: gold;
+        animation-duration: 5s;
+        animation-name: box;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-out;
+    }
+    #aqua{
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        animation-duration: 5s;
+        animation-name: box;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in;
+    }
+
+    
+    @keyframes box {
+        from {
+           
+            width: 200px;
+        }
+        to{
+           
+            width: 500px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div id="blue"></div>
+    <div id="red"></div>
+    <div id="green"></div>
+    <div id="gold"></div>
+    <div id="aqua"></div>
+    
+</body>
+</html>

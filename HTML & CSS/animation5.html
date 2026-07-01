@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plane Animation</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    background:#87CEEB;
+    position:relative;
+}
+
+#plane{
+    width:300px;
+    height:300px;
+    position:absolute;
+    animation:fly 12s linear infinite;
+}
+
+#plane img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+@keyframes fly{
+
+    0%{
+        left:0;
+        top:0;
+        transform:rotate(90deg);
+    }
+
+    24%{
+        left:0;
+        top:70%;
+        transform:rotate(90deg);
+    }
+
+    25%{
+        left:0;
+        top:70%;
+        transform:rotate(0deg);
+    }
+
+    49%{
+        left:calc(100vw - 300px);
+        top:70%;
+        transform:rotate(0deg);
+    }
+
+ 
+    50%{
+        left:calc(100vw - 300px);
+        top:70%;
+        transform:rotate(-90deg);
+    }
+
+    74%{
+        left:calc(100vw - 300px);
+        top:0;
+        transform:rotate(-90deg);
+    }
+
+    
+    75%{
+        left:calc(100vw - 300px);
+        top:0;
+        transform:rotate(-180deg);
+    }
+
+    99%{
+        left:0;
+        top:0;
+        transform:rotate(-180deg);
+    }
+
+    100%{
+        left:0;
+        top:0;
+        transform:rotate(-180deg);
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="plane">
+    <img src="Airoplane.png" alt="Plane">
+</div>
+
+</body>
+</html>

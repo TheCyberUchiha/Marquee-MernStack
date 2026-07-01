@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bouncing Ball</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f2f2f2;
+}
+
+.container{
+    width:250px;
+    height:500px;
+    position:relative;
+}
+
+#Circle{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    background:red;
+    position:absolute;
+    left:25px;
+    top:0;
+
+    animation:Circle 2s linear infinite alternate;
+    z-index:2;
+}
+
+#Shadow{
+    width:180px;
+    height:35px;
+    background:rgba(0,0,0,0.5);
+    border-radius:50%;
+    position:absolute;
+    left:35px;
+    bottom:0;
+
+    filter:blur(8px);
+
+    animation:Shadow 2s linear infinite alternate;
+}
+
+@keyframes Circle{
+
+    0%{
+        top:0;
+    }
+
+    100%{
+        top:300px;
+    }
+
+}
+
+@keyframes Shadow{
+
+    0%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(0.4);
+        opacity:0.3;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div id="Circle"></div>
+
+    <div id="Shadow"></div>
+
+</div>
+
+</body>
+</html>
